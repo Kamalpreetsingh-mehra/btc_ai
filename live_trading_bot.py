@@ -18,8 +18,8 @@ warnings.filterwarnings('ignore')
 # ═══════════════════════════════════════════════════════════════════════════
 # CONFIGURATION
 # ═══════════════════════════════════════════════════════════════════════════
-API_KEY = os.getev('API_KEY')  # Replace with your API key
-API_SECRET = os.getev('API_SECRET')  # Replace with your API secret
+API_KEY = os.getenv('API_KEY')  # Replace with your API key
+API_SECRET = os.getenv('API_SECRET')  # Replace with your API secret
 SYMBOL = 'BTCUSDT'
 LEVERAGE = 25
 TIMEFRAME = '15m'
