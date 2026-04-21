@@ -8,6 +8,7 @@ import pandas as pd
 import numpy as np
 import time
 import logging
+import os
 from datetime import datetime, timedelta
 from binance.client import Client
 from binance.exceptions import BinanceAPIException
@@ -17,8 +18,8 @@ warnings.filterwarnings('ignore')
 # ═══════════════════════════════════════════════════════════════════════════
 # CONFIGURATION
 # ═══════════════════════════════════════════════════════════════════════════
-API_KEY = '0EBCMPnVWZ9gJ7n7zGex6AlTdeUjPqdOgRgjRqZ4qPJNNCQ63en4LR3lGwlPjBHs'  # Replace with your API key
-API_SECRET = 'K7nPVO8CDFaUxk3YIsNCPkp8DvRmlWXWqYVFuvUyZbzuJTjEaz9NAWKwjkXtsSEl'  # Replace with your API secret
+API_KEY = os.getevn('API_KEY')  # Replace with your API key
+API_SECRET = os.getevn('API_SECRET')  # Replace with your API secret
 SYMBOL = 'BTCUSDT'
 LEVERAGE = 25
 TIMEFRAME = '15m'
